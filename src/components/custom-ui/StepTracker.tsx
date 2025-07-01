@@ -43,7 +43,7 @@ const StepTracker = ({
   totalSteps: number;
 }) => {
   return (
-    <div className="md:w-full relative w-64">
+    <div className="md:w-full relative">
       <div className="h-full w-[3px] md:w-full md:h-[3px] rounded-full bg-[#AAAAAA] absolute max-md:left-1/2 max-md:-translate-x-1/2 md:top-1/2 md:-translate-y-1/2 -z-10 ">
         <div
           className="hidden md:flex h-full bg-[#13B7CC] transition-all duration-300 ease-in-out"

@@ -36,7 +36,7 @@ const StepTwo = ({
       name="ticketType"
       render={({ field }) => (
         <FormItem className="space-y-5">
-          <FormLabel className="text-center block text-[24px]">
+          <FormLabel className="text-center block text-[20px] md:text-[24px]">
             What type of ticket do you want?
           </FormLabel>
           <FormControl>
