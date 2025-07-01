@@ -36,11 +36,11 @@ export default function Home() {
   const { step, currentStep, back, next, isFirstStep, isLastStep, totalSteps } =
     useMultiStepForm({
       steps: [
-        <StepOne form={form} />,
-        <StepTwo form={form} />,
-        <StepThree data={data} />,
-        <StepFour />,
-        <StepFive />,
+        <StepOne form={form} key={1}/>,
+        <StepTwo form={form} key={2}/>,
+        <StepThree data={data} key={3}/>,
+        <StepFour key={4} />,
+        <StepFive key={5} />,
       ],
     });
 
@@ -84,7 +84,7 @@ export default function Home() {
                   disabled={currentStep === 0}
                 />
               )}
-              {isLastStep && (
+              {!isLastStep && (
                 <CustomButton
                   text="Next"
                   color="#13B7CC"
